@@ -28,7 +28,7 @@ describe('getValidParameters', () => {
 
 describe('makeEnvironment', () => {
 
-   const environment = makeEnvironment({
+  const environment = makeEnvironment({
     DB_HOST: stringParameter(),
     DB_PORT: numberParameter(),
     DB_USER: stringParameter(),
