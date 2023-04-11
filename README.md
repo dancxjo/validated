@@ -5,7 +5,7 @@ This library simplifies the process of validating and converting string maps, su
 ## Installation
 
 ```bash
-npm install --save validated-parameters
+npm install --save validated-parameters-lib
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ import {
   numberParameter,
   booleanParameter,
   optionally,
-} from 'validated-parameters';
+} from 'validated-parameters-lib';
 ```
 
 2. Define the expected parameter map:

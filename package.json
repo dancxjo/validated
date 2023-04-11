@@ -1,5 +1,5 @@
 {
-  "name": "validated",
+  "name": "validated-parameters-lib",
   "version": "1.0.0",
   "description": "Tools for extracting validated parameters from process.env and query strings",
   "main": "lib/index.js",
