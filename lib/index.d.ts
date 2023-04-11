@@ -1,0 +1,10 @@
+import { ParameterMap } from './ParameterMap';
+import { ValidatedParameters } from './ValidatedParameters';
+export * from './Parameter';
+export * from './Converter';
+export * from './Validator';
+export * from './ParameterMap';
+export * from './ValidatedParameters';
+export declare function getValidParameter<M extends ParameterMap, V extends ValidatedParameters<M>, K extends keyof M>(key: K, parameterMap: M, parameters: Record<string, string | undefined>): V[K];
+export declare function getValidParameters<M extends ParameterMap>(parameterMap: M, parameters: Record<string, string | undefined>): ValidatedParameters<M>;
+export declare function makeEnvironment<M extends ParameterMap>(parameterMap: M): ValidatedParameters<M>;
