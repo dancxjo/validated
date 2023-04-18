@@ -1,17 +1,16 @@
 {
-  "name": "validated-parameters-lib",
-  "version": "1.0.0",
+  "name": "validated-parameters",
+  "version": "1.0.1",
   "description": "Tools for extracting validated parameters from process.env and query strings",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "npm run build:commonjs && npm run build:esm",
-    "build:commonjs": "tsc",
-    "build:esm": "tsc -p tsconfig.build.esm.json",
+    "build": "tsc",
     "lint": "eslint 'src/**/*.ts' --fix",
-    "format": "prettier --write 'src/**/*.ts'"
+    "format": "prettier --write 'src/**/*.ts'",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
