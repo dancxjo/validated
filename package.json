@@ -1,6 +1,6 @@
 {
   "name": "validated-parameters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tools for extracting validated parameters from process.env and query strings",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",

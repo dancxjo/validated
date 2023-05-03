@@ -7,6 +7,10 @@ export * from './Converter'
 export * from './Validator'
 export * from './ParameterMap'
 export * from './ValidatedParameters'
+export * from './types/boolean'
+export * from './types/number'
+export * from './types/optional'
+export * from './types/string'
 
 export function getValidParameter<M extends ParameterMap, V extends ValidatedParameters<M>, K extends keyof M>(key: K, parameterMap: M, parameters: Record<string, string | undefined>): V[K] {
   const parameter = parameterMap[key]
